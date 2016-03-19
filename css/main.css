@@ -1,3 +1,6 @@
+html, body, .container-fluid, .home {
+	height: 100%;
+}
 
 @font-face {
   font-family: 'Champagne';
@@ -79,13 +82,12 @@ body {
 
 .home {
 	font-family: 'Champagne';
-	height: 100%;
 	padding: 10% 0;
 	text-align: center;
 }
 
 	.home-content {
-		margin-top: 10px;
+		margin: 10px 0;
 	}
 
 	.home-content h1 {
@@ -93,11 +95,9 @@ body {
 	}
 
 	#title {
-		vertical-align: bottom;
-		padding: 10px;
-		font-size: 16px;
-		margin-bottom: 35px;
 		color: black;
+		font-size: 24px;
+		vertical-align: middle;
 	}
 
 	#inner-content {
@@ -111,11 +111,11 @@ body {
 	}
 
 	.bracket {
-		font-family: 'Walkway';
-		display: inline-block;
-		font-size: 110px;
 		color: black;
-		margin-top: 0px;
+		display: inline-block;
+		font-family: 'Walkway';
+		font-size: 110px;
+		vertical-align: middle;
 	}
 
 #social {
@@ -319,6 +319,9 @@ span {
 	padding: 0px;
 }
 
+.nomargin {
+	margin: 0;
+}
 
 iframe {
 	width: 100%;
