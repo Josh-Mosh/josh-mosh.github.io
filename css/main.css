@@ -286,14 +286,18 @@ body {
 		}
 
 .footer {
-	padding: 20px;
+	padding: 10px;
 	background-color: #333333;
 	color: #555555;
 	text-align: center;
 }
 
-	.footer a {
+	.footer a, .footer i {
 		color: #555555;
+	}
+
+	.footer i {
+		vertical-align: middle;
 	}
 
 span {
