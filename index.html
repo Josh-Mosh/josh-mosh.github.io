@@ -4,37 +4,44 @@ layout: fluid-container
 
 {% include home.html %}
 
-<div class='about'>
-</div>
+{% include about.html %}
 
-<div class='portfolio'>
-  <div id="tabs">
-    <ul>
-      <li id='php_tab'><a href="#portfolio_php">PHP / CodeIgniter</a></li>
-      <li id='js_tab'><a href="#portfolio_js">JavaScript / Node.js</a></li>
-      <li id='ruby_tab'><a href="#portfolio_ruby">Ruby / Ruby on Rails</a></li>
-    </ul>
-
-    {% include portfolio/php.html %}
-
-    {% include portfolio/js.html %}
-
-    {% include portfolio/ruby.html %}
-
-  </div>
-</div>
+{% include portfolio.html %}
 
 {% include resume.html %}
 
-<div class='header_bg' style='display:none'></div>
+<div class="header_bg" style="display:none"></div>
 
-<div class='row'>
-  <div class='col-xs-12 header'>
-    <ul class='header_left'>
-      <a href='#' id='home'><li><h4 class='active'>Home</h4></li></a>
-      <a href='#' id='portfolio'><li><h4 class='inactive'>Portfolio</h4></li></a>
-      <a href='#' id='resume'><li><h4 class='inactive'>Resum&#233</h4></li></a>
-    </ul>
+<div class="row">
+  <div class="col-xs-12 header">
+  	<div class="left">
+	    <ul class="header_left">
+	      <a href="#" id="home"><li><h4 class="active">Home</h4></li></a>
+	      <a href="#" id="portfolio"><li><h4 class="inactive">Portfolio</h4></li></a>
+	      <a href="#" id="resume"><li><h4 class="inactive">Resum&#233</h4></li></a>
+	    </ul>
+  	</div>
+
+	  <div id ="social" class="right">
+
+        <a href="https://twitter.com/Josh_Mosh" target="_blank" id="twitter">
+          <i class="fa fa-2x fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/Joshua.Neal.Gillespie" target="_blank">
+          <i class="fa fa-2x fa-facebook"></i>
+        </a>
+        <a href="http://instagram.com/joshmosh" target="_blank">
+          <i class="fa fa-2x fa-instagram"></i>
+        </a>
+        <a href="http://www.linkedin.com/in/joshmosh" target="_blank">
+          <i class="fa fa-2x fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Josh-Mosh" target="_blank" id="github">
+          <i class="fa fa-2x fa-github"></i>
+        </a>
+
+
+	  </div>
   </div>
 </div>
 

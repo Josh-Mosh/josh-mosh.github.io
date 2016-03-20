@@ -50,18 +50,6 @@ $(document).ready(function() {
 		return false;
 	});
 
-	// social media icons
-	$('#social ul a').hover(
-		function() {
-			$(this).children().children().css('height', '30px');
-			$(this).children().children().css('width', '30px');
-		},
-		function() {
-			$(this).children().children().css('height', '20px');
-			$(this).children().children().css('width', '20px');
-		}
-	);
-
 	// portfolio tabs
 	$(function() {
 		$("#tabs").tabs();

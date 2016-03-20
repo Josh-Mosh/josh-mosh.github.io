@@ -1,0 +1,90 @@
+---
+---
+
+.house {
+  padding: 40px 30px;
+
+  .sketchup-models {
+    text-align: center;
+  }
+
+  .sketchup-background, .down-arrow-wrapper {
+    background: #FDFCFC;
+    font-weight: 200;
+    height: 50px;
+    opacity: .9;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .layer-select {
+    padding: 10px;
+    right: 40px;
+    top: 10px;
+    width: 150px;
+    border-radius: 0;
+    border: 0;
+    font-size: 21px;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .hidden-select {
+    background: transparent;
+    cursor: pointer;
+    right: 10px;
+    width: 200px;
+    z-index: 2;
+  }
+
+  .select-options {
+    @extend .sketchup-background;
+    cursor: pointer;
+    right: -10px;
+    top: 60px;
+    width: 200px;
+    text-align: left;
+    font-size: 18px;
+
+    a {
+      background: #FDFCFC;
+      color: #000;
+      cursor: pointer;
+      height: 40px;
+      opacity: .9;
+      display: block;
+      border-top: 1px solid lightgray;
+      padding: 7px 10px;
+    }
+  }
+
+  .down-arrow-wrapper {
+    height: 50px;
+    width: 50px;
+    right: -10px;
+    top: 10px;
+
+    .down-arrow {
+      background-image: url(https://3dwarehouse.sketchup.com/img/embed-sprites.png);
+      background-size: 64px 194px;
+      background-position: 0px -160px;
+      position: absolute;
+      margin: 9px 9px 0px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+
+    // Sketchup default overrides
+    #viewer-scenes-panel, .viewer-scenes-panel.enabled {
+      top: 50px !important;
+    }
+
+  }
+
+  .three-d-model, .select-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    position: relative;
+  }
+}

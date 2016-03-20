@@ -1,3 +1,6 @@
+---
+---
+
 html, body, .container-fluid, .home {
 	height: 100%;
 }
@@ -12,13 +15,16 @@ html, body, .container-fluid, .home {
   src: url('../assets/fonts/WalkwayCondensed.ttf');
 }
 
-body {
-	background: url('../assets/img/waterbgblue2.png') center center no-repeat;
+.home-bg {
+	background: url('../assets/img/water2blueblurry.png') center center no-repeat;
 /*	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;*/
 	background-size: cover;
 	background-attachment: fixed;
+	height: 100%;
+	position: absolute;
+	width: 100%;
 }
 
 .header {
@@ -26,9 +32,9 @@ body {
 	position: fixed;
 	padding-top: 20px;
 	font-family: sans-serif;
-	width: 110%;
 	margin-bottom: 10px;
 }
+
 	.header_bg {
 		top: 0;
 		height: 75px;
@@ -84,75 +90,55 @@ body {
 	font-family: 'Champagne';
 	padding: 10% 0;
 	text-align: center;
-}
 
 	.home-content {
 		margin: 10px 0;
+
+		.profile-pic {
+		  margin: 0 auto;
+		  display: block;
+		  height: 175px;
+		  border: 7px solid;
+		}
 	}
 
-	.home-content h1 {
-		display: inline-block;
-	}
-
-	#title {
+	.title {
 		color: black;
-		font-size: 24px;
-		vertical-align: middle;
-	}
-
-	#inner-content {
-		display: inline-block;
-	}
-
-	span.title {
 		font-size: 40px;
 		letter-spacing: 5px;
-		color: black;
 	}
-
-	.bracket {
-		color: black;
-		display: inline-block;
-		font-family: 'Walkway';
-		font-size: 110px;
-		vertical-align: middle;
-	}
+}
 
 #social {
 	min-width: 325px;
-}
 
-	#social img {
-		width: 20px;
+	i {
+		color: #000;
+
+		&:hover {
+			color: #333333;
+		}
 	}
 
-	#social ul {
-		list-style-type: none;
-	}
-
-	#social li img{
-		vertical-align: top;
-	}
-
-	#social ul a {
+	a {
 		width: 30px;
 		height: 40px;
 		display: inline-block;
-		margin: 0px 20px;
+		margin: 10px;
 	}
 
-	#social .col-xs-12 {
+	.col-xs-12 {
 		text-align: center;
 	}
 
-	#social #twitter {
+	#twitter {
 		margin-left: 0px;
 	}
 
-	#social #github {
+	#github {
 		margin-right: 0px;
 	}
-
+}
 
 
 .about {
@@ -169,11 +155,10 @@ body {
 	}
 
 .portfolio {
+	background-color: white;
 	font-family: sans-serif;
 	font-size: 20px;
 	padding: 20px;
-	background-color: white;
-	border-bottom: 1px solid silver;
 }
 
 	#portfolio_php, #portfolio_js, #portfolio_ruby {
@@ -325,6 +310,14 @@ span {
 
 .nomargin {
 	margin: 0;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
 }
 
 iframe {

@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="/css/jquery-ui-1.10.4.custom.min.css">
   <link rel="stylesheet" href="/css/resume.css">
+  <link rel="stylesheet" href="/css/house.css">
   <link rel="stylesheet" href="/css/main.css">
 
   <link rel="canonical" href="http://joshmosh.com/">
@@ -27,41 +28,21 @@
 
   <div class='container-fluid'>
 
-  
+  <div class='home-bg'></div>
+
 <div class='home'>
+
   <div class='row'>
     <div class='col-md-12 home-content'>
-        <h1 class='bracket nomargin'>{</h1>
-        <h1 id='title'>www. <span class='title'>&nbsp;JoshMosh&nbsp;</span>.com</h1>
-        <h1 class='bracket nomargin'>}</h1>
+      <img class="profile-pic" src="assets/img/joshgillespie.jpg">
+      <h1 class='title'>Hi, I'm Josh (Mosh).</h1>
+      <h1 class='title'>I make web apps.</h1>
     </div>
   </div>
 
-  <div id ='social'>
-    <div class='row'>
-      <ul class='col-xs-12'>
-        <a href="https://twitter.com/Josh_Mosh" target="_blank" id='twitter'>
-          <li><img src="assets/img/twitter.png" alt-src="assets/img/twitterwhite.gif"></li>
-        </a>
-        <a href="https://www.facebook.com/Joshua.Neal.Gillespie" target="_blank">
-          <li><img src="assets/img/facebook.png" alt-src="assets/img/facebookwhite.gif"></li>
-        </a>
-        <a href="http://instagram.com/joshmosh" target="_blank">
-          <li><img src="assets/img/insta.png" alt-src="assets/img/instawhite.gif"></li>
-        </a>
-        <a href="http://www.linkedin.com/in/joshmosh" target="_blank">
-          <li><img src="assets/img/linkedin.png" alt-src="assets/img/linkedinwhite.gif"></li>
-        </a>
-        <a href="https://github.com/Josh-Mosh" target="_blank" id='github'>
-          <li><img src="assets/img/github.png" alt-src="assets/img/githubwhite.png"></li>
-        </a>
-      </ul>
-    </div>
-  </div>
 </div>
 
-<div class='about'>
-</div>
+<div class='about'></div>
 
 <div class='portfolio'>
   <div id="tabs">
@@ -391,15 +372,38 @@
 </div>
 
 
-<div class='header_bg' style='display:none'></div>
+<div class="header_bg" style="display:none"></div>
 
-<div class='row'>
-  <div class='col-xs-12 header'>
-    <ul class='header_left'>
-      <a href='#' id='home'><li><h4 class='active'>Home</h4></li></a>
-      <a href='#' id='portfolio'><li><h4 class='inactive'>Portfolio</h4></li></a>
-      <a href='#' id='resume'><li><h4 class='inactive'>Resum&#233</h4></li></a>
-    </ul>
+<div class="row">
+  <div class="col-xs-12 header">
+  	<div class="left">
+	    <ul class="header_left">
+	      <a href="#" id="home"><li><h4 class="active">Home</h4></li></a>
+	      <a href="#" id="portfolio"><li><h4 class="inactive">Portfolio</h4></li></a>
+	      <a href="#" id="resume"><li><h4 class="inactive">Resum&#233</h4></li></a>
+	    </ul>
+  	</div>
+
+	  <div id ="social" class="right">
+
+        <a href="https://twitter.com/Josh_Mosh" target="_blank" id="twitter">
+          <i class="fa fa-2x fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/Joshua.Neal.Gillespie" target="_blank">
+          <i class="fa fa-2x fa-facebook"></i>
+        </a>
+        <a href="http://instagram.com/joshmosh" target="_blank">
+          <i class="fa fa-2x fa-instagram"></i>
+        </a>
+        <a href="http://www.linkedin.com/in/joshmosh" target="_blank">
+          <i class="fa fa-2x fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Josh-Mosh" target="_blank" id="github">
+          <i class="fa fa-2x fa-github"></i>
+        </a>
+
+
+	  </div>
   </div>
 </div>
 

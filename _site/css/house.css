@@ -1,0 +1,63 @@
+.house {
+  padding: 40px 30px; }
+  .house .sketchup-models {
+    text-align: center; }
+  .house .sketchup-background, .house .select-options, .house .down-arrow-wrapper {
+    background: #FDFCFC;
+    font-weight: 200;
+    height: 50px;
+    opacity: .9;
+    position: absolute;
+    z-index: 1; }
+  .house .layer-select {
+    padding: 10px;
+    right: 40px;
+    top: 10px;
+    width: 150px;
+    border-radius: 0;
+    border: 0;
+    font-size: 21px;
+    appearance: none;
+    -webkit-appearance: none; }
+  .house .hidden-select {
+    background: transparent;
+    cursor: pointer;
+    right: 10px;
+    width: 200px;
+    z-index: 2; }
+  .house .select-options {
+    cursor: pointer;
+    right: -10px;
+    top: 60px;
+    width: 200px;
+    text-align: left;
+    font-size: 18px; }
+    .house .select-options a {
+      background: #FDFCFC;
+      color: #000;
+      cursor: pointer;
+      height: 40px;
+      opacity: .9;
+      display: block;
+      border-top: 1px solid lightgray;
+      padding: 7px 10px; }
+  .house .down-arrow-wrapper {
+    height: 50px;
+    width: 50px;
+    right: -10px;
+    top: 10px; }
+    .house .down-arrow-wrapper .down-arrow {
+      background-image: url(https://3dwarehouse.sketchup.com/img/embed-sprites.png);
+      background-size: 64px 194px;
+      background-position: 0px -160px;
+      position: absolute;
+      margin: 9px 9px 0px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer; }
+    .house .down-arrow-wrapper #viewer-scenes-panel, .house .down-arrow-wrapper .viewer-scenes-panel.enabled {
+      top: 50px !important; }
+  .house .three-d-model, .house .select-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    position: relative; }
