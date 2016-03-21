@@ -2,6 +2,9 @@
   margin: 0;
   clear: left; }
 
+.nopadding {
+  padding: 0; }
+
 .marLeft-1 {
   margin-left: 10px; }
 
@@ -124,12 +127,6 @@
 
 .padLeft-4 {
   padding-left: 40px; }
-
-.noMargin {
-  margin: 0; }
-
-.noPadding {
-  padding: 0; }
 
 .noTopBotPadding {
   padding-top: 0;

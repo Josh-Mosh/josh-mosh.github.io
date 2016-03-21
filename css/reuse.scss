@@ -8,6 +8,10 @@ $baseNum: 10px;
   clear: left;
 }
 
+.nopadding {
+  padding: 0;
+}
+
 .marLeft-1 {
   margin-left: $baseNum;
 }
@@ -170,14 +174,6 @@ $baseNum: 10px;
 
 .padLeft-4 {
   padding-left: $baseNum * 4;
-}
-
-.noMargin {
-  margin: 0;
-}
-
-.noPadding {
-  padding: 0;
 }
 
 .noTopBotPadding {

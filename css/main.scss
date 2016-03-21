@@ -13,8 +13,16 @@ html, body, .home {
 }
 
 .content {
-	padding-bottom: 243px;
+	padding-bottom: 175px;
 	padding-top: 75px;
+	background: url('../assets/img/water2blueblurry.png') center center no-repeat;
+/*	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
 }
 
 @font-face {
@@ -25,18 +33,6 @@ html, body, .home {
 @font-face {
   font-family: 'Walkway';
   src: url('../assets/fonts/WalkwayCondensed.ttf');
-}
-
-.home-bg {
-	background: url('../assets/img/water2blueblurry.png') center center no-repeat;
-/*	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;*/
-	background-size: cover;
-	background-attachment: fixed;
-	height: 100%;
-	position: absolute;
-	width: 100%;
 }
 
 .header {
@@ -62,7 +58,7 @@ html, body, .home {
 
 	.header_left {
 		text-align: left;
-		padding-left: 40px;
+		padding-left: 20px;
 	}
 
 		.header_left .active {
@@ -97,12 +93,6 @@ html, body, .home {
 	font-family: 'Champagne';
 	padding: 15% 0;
 	text-align: center;
-	background: url('../assets/img/water2blueblurry.png') center center no-repeat;
-/*	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;*/
-	background-size: cover;
-	background-attachment: fixed;
 
 	.home-content {
 		margin: 10px 0;
@@ -118,7 +108,7 @@ html, body, .home {
 	.title {
 		color: black;
 		font-size: 40px;
-		letter-spacing: 5px;
+		letter-spacing: 2x;
 	}
 }
 
@@ -135,7 +125,7 @@ html, body, .home {
 
 	a {
 		display: inline-block;
-		margin: 10px 30px;
+		margin: 10px 3%;
 	}
 
 	.col-xs-12 {
@@ -278,7 +268,7 @@ html, body, .home {
   bottom: 0;
 	color: #CCC;
   left: 0;
-  min-height: 244px;
+  min-height: 175px;
 	padding: 10px;
   position: absolute;
 	text-align: center;

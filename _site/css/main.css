@@ -8,16 +8,8 @@ html, body, .home {
   color: black; }
 
 .content {
-  padding-bottom: 243px;
-  padding-top: 75px; }
-
-@font-face {
-  font-family: 'Champagne';
-  src: url("../assets/fonts/Champagne.ttf"); }
-@font-face {
-  font-family: 'Walkway';
-  src: url("../assets/fonts/WalkwayCondensed.ttf"); }
-.home-bg {
+  padding-bottom: 175px;
+  padding-top: 75px;
   background: url("../assets/img/water2blueblurry.png") center center no-repeat;
   /*	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -25,9 +17,14 @@ html, body, .home {
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
-  position: absolute;
   width: 100%; }
 
+@font-face {
+  font-family: 'Champagne';
+  src: url("../assets/fonts/Champagne.ttf"); }
+@font-face {
+  font-family: 'Walkway';
+  src: url("../assets/fonts/WalkwayCondensed.ttf"); }
 .header {
   top: 0;
   position: fixed;
@@ -48,7 +45,7 @@ html, body, .home {
 
 .header_left {
   text-align: left;
-  padding-left: 40px; }
+  padding-left: 20px; }
 
 .header_left .active {
   color: black;
@@ -75,13 +72,7 @@ html, body, .home {
 .home {
   font-family: 'Champagne';
   padding: 15% 0;
-  text-align: center;
-  background: url("../assets/img/water2blueblurry.png") center center no-repeat;
-  /*	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;*/
-  background-size: cover;
-  background-attachment: fixed; }
+  text-align: center; }
   .home .home-content {
     margin: 10px 0; }
     .home .home-content .profile-pic {
@@ -92,7 +83,7 @@ html, body, .home {
   .home .title {
     color: black;
     font-size: 40px;
-    letter-spacing: 5px; }
+    letter-spacing: 2x; }
 
 #social {
   min-width: 325px; }
@@ -102,7 +93,7 @@ html, body, .home {
       color: #5196C2; }
   #social a {
     display: inline-block;
-    margin: 10px 30px; }
+    margin: 10px 3%; }
   #social .col-xs-12 {
     text-align: center; }
 
@@ -214,7 +205,7 @@ html, body, .home {
   bottom: 0;
   color: #CCC;
   left: 0;
-  min-height: 244px;
+  min-height: 175px;
   padding: 10px;
   position: absolute;
   text-align: center;
