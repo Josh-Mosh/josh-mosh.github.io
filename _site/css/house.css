@@ -11,7 +11,7 @@
     z-index: 1; }
   .house .layer-select {
     padding: 10px;
-    right: 40px;
+    right: 39px;
     top: 10px;
     width: 150px;
     border-radius: 0;
@@ -22,7 +22,7 @@
   .house .hidden-select {
     background: transparent;
     cursor: pointer;
-    right: 10px;
+    right: -10px;
     width: 200px;
     z-index: 2; }
   .house .select-options {
