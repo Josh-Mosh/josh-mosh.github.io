@@ -1,15 +1,19 @@
-.house {
-  padding: 40px 30px; }
-  .house .sketchup-models {
+.house-section {
+  padding: 40px 20px;
+  min-height: 400px; }
+
+.house-models {
+  background: white; }
+  .house-models .sketchup-models {
     text-align: center; }
-  .house .sketchup-background, .house .select-options, .house .down-arrow-wrapper {
+  .house-models .sketchup-background, .house-models .select-options, .house-models .down-arrow-wrapper {
     background: #FDFCFC;
     font-weight: 200;
     height: 50px;
     opacity: .9;
     position: absolute;
     z-index: 1; }
-  .house .layer-select {
+  .house-models .layer-select {
     padding: 10px;
     right: 39px;
     top: 10px;
@@ -19,20 +23,20 @@
     font-size: 21px;
     appearance: none;
     -webkit-appearance: none; }
-  .house .hidden-select {
+  .house-models .hidden-select {
     background: transparent;
     cursor: pointer;
     right: -10px;
     width: 200px;
     z-index: 2; }
-  .house .select-options {
+  .house-models .select-options {
     cursor: pointer;
     right: -10px;
     top: 60px;
     width: 200px;
     text-align: left;
     font-size: 18px; }
-    .house .select-options a {
+    .house-models .select-options a {
       background: #FDFCFC;
       color: #000;
       cursor: pointer;
@@ -41,12 +45,12 @@
       display: block;
       border-top: 1px solid lightgray;
       padding: 7px 10px; }
-  .house .down-arrow-wrapper {
+  .house-models .down-arrow-wrapper {
     height: 50px;
     width: 50px;
     right: -10px;
     top: 10px; }
-    .house .down-arrow-wrapper .down-arrow {
+    .house-models .down-arrow-wrapper .down-arrow {
       background-image: url(https://3dwarehouse.sketchup.com/img/embed-sprites.png);
       background-size: 64px 194px;
       background-position: 0px -160px;
@@ -55,9 +59,16 @@
       width: 32px;
       height: 32px;
       cursor: pointer; }
-    .house .down-arrow-wrapper #viewer-scenes-panel, .house .down-arrow-wrapper .viewer-scenes-panel.enabled {
+    .house-models .down-arrow-wrapper #viewer-scenes-panel, .house-models .down-arrow-wrapper .viewer-scenes-panel.enabled {
       top: 50px !important; }
-  .house .three-d-model, .house .select-wrapper {
+  .house-models .three-d-model, .house-models .select-wrapper {
     margin: 0 auto;
     max-width: 900px;
     position: relative; }
+
+.house-info {
+  background: #666666;
+  color: white; }
+
+.house-more-info {
+  background: #EEE; }

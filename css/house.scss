@@ -1,8 +1,13 @@
 ---
 ---
 
-.house {
-  padding: 40px 30px;
+.house-section {
+  padding: 40px 20px;
+  min-height: 400px;
+}
+
+.house-models {
+  background: white;
 
   .sketchup-models {
     text-align: center;
@@ -87,4 +92,13 @@
     max-width: 900px;
     position: relative;
   }
+}
+
+.house-info {
+  background: #666666;
+  color: white;
+}
+
+.house-more-info {
+  background: #EEE;
 }

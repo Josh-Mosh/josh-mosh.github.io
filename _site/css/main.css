@@ -30,7 +30,8 @@ html, body, .home {
   position: fixed;
   padding-top: 20px;
   font-family: sans-serif;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  z-index: 2; }
 
 .header_bg {
   top: 0;
@@ -38,7 +39,8 @@ html, body, .home {
   position: fixed;
   background-color: #5196C2;
   width: 110%;
-  border-bottom: 4px solid #222222; }
+  border-bottom: 4px solid #222222;
+  z-index: 2; }
 
 .header ul li {
   display: inline-block; }

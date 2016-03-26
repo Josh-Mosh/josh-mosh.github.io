@@ -1,45 +1,66 @@
 ---
-layout: default
+layout: fluid-container
 ---
 
-<div class="house">
+<div class="house-content">
 
-  <div class="sketchup-models">
+  <div class="house-models house-section">
+    <div class="textCenter">
+      <h1>We're buying a house!</h1>
+      <p>So the logical next step was create an accurate 3D model.</p>
+    </div>
 
-    <div class="select-wrapper">
-      <div class="down-arrow-wrapper">
-        <div class="sketchup-background down-arrow"></div>
+    <div class="sketchup-models">
+
+      <div class="select-wrapper">
+        <div class="down-arrow-wrapper">
+          <div class="sketchup-background down-arrow"></div>
+        </div>
+
+        <div class="sketchup-background layer-select hidden-select"></div>
+
+        <div class="select-options" hidden>
+          <a data-val="house-exterior">Exterior</a>
+          <a data-val="house-second-floor">Second Floor</a>
+          <a data-val="house-first-floor">First Floor</a>
+        </div>
+
+        <select id="house-layer-select" class="sketchup-background layer-select">
+          <option value="house-exterior">Exterior</option>
+          <option value="house-second-floor">Second Floor</option>
+          <option value="house-first-floor">First Floor</option>
+        </select>
       </div>
 
-      <div class="sketchup-background layer-select hidden-select"></div>
-
-      <div class="select-options" hidden>
-        <a data-val="house-exterior">Exterior</a>
-        <a data-val="house-second-floor">Second Floor</a>
-        <a data-val="house-first-floor">First Floor</a>
+      <div class="three-d-model house-exterior">
+        <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=ucc47419e-dc23-4bf7-bf6c-d034d42913be&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
       </div>
 
-      <select id="house-layer-select" class="sketchup-background layer-select">
-        <option value="house-exterior">Exterior</option>
-        <option value="house-second-floor">Second Floor</option>
-        <option value="house-first-floor">First Floor</option>
-      </select>
-    </div>
+      <div class="three-d-model house-second-floor" hidden>
+        <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=ub915951f-20a0-48b3-9f2d-fd923196aae3&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+      </div>
 
-    <div class="three-d-model house-exterior">
-      <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=ucc47419e-dc23-4bf7-bf6c-d034d42913be&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+      <div class="three-d-model house-first-floor" hidden>
+        <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=uddfdc514-e76d-4d24-b5bd-083f7bc7ecaf&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+      </div>
+      <small><i class="fa fa-arrows"></i> Click and drag to orbit</small>
+      <small class="marLeft-2 marRight-2"><i class="fa fa-arrows-h"></i> Drag + shift to pan</small>
+      <small><i class="fa fa-arrows-v"></i> Scroll to zoom</small>
     </div>
+  </div>
 
-    <div class="three-d-model house-second-floor" hidden>
-      <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=ub915951f-20a0-48b3-9f2d-fd923196aae3&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+  <div class="house-section house-info">
+    <div class="col-md-4 col-sm-12">
+      <h1>We're pretty excited about what's going in this content block.</h1>
     </div>
+    <div class="col-md-8 col-sm-12">
+      <p>
+        I think I'll just fill this side with pictures and what not!.
+      </p>
+    </div>
+  </div>
 
-    <div class="three-d-model house-first-floor" hidden>
-      <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=uddfdc514-e76d-4d24-b5bd-083f7bc7ecaf&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
-    </div>
-    <small><i class="fa fa-arrows"></i> Click and drag to orbit</small>
-    <small class="marLeft-2 marRight-2"><i class="fa fa-arrows-h"></i> Drag + shift to pan</small>
-    <small><i class="fa fa-arrows-v"></i> Scroll to zoom</small>
+  <div class="house-section house-more-info">
   </div>
 
 </div>
