@@ -71,9 +71,11 @@
       <div class="three-d-model house-first-floor" hidden>
         <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=uddfdc514-e76d-4d24-b5bd-083f7bc7ecaf&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
       </div>
-      <small><i class="fa fa-arrows"></i> Click and drag to orbit</small>
-      <small class="marLeft-2 marRight-2"><i class="fa fa-arrows-h"></i> Drag + shift to pan</small>
-      <small><i class="fa fa-arrows-v"></i> Scroll to zoom</small>
+      <div class="row textCenter">
+        <small class="col-sm-offset-2 col-sm-3 col-xs-12"><i class="fa fa-arrows"></i> Click and drag to orbit</small>
+        <small class="col-sm-3 col-xs-12"><i class="fa fa-arrows-h"></i> Drag + shift to pan</small>
+        <small class="col-sm-3 col-xs-12"><i class="fa fa-arrows-v"></i> Scroll to zoom</small>
+      </div>
     </div>
   </div>
 
@@ -82,9 +84,9 @@
       <h1>We're pretty excited about what's going in this content block.</h1>
     </div>
     <div class="col-md-8 col-sm-12">
-      <p>
-        I think I'll just fill this side with pictures and what not!.
-      </p>
+      <img src="/assets/img/house/0.JPG" />
+      <img src="/assets/img/house/1.JPG" />
+      <img src="/assets/img/us.jp2" />
     </div>
   </div>
 
@@ -117,6 +119,43 @@
       changeModelView($selectedLayer);
       $('.layer-select').trigger('change');
     });
+
+    var images = $('.house-info img');
+
+    function myLoop () {
+       setTimeout(function () {
+
+          var random = randomIntBetween(0, 17),
+              image = $(images[randomIntBetween(0, 1)]),
+              source = $(image).prop('src'),
+              current = parseInt(source.charAt(source.length - 5));
+
+          if (random === current) {
+            if (current === 0) {
+              random = 1;
+            } else {
+              random = random - 1;
+            }
+          }
+
+          $(image).fadeTo(1000, 0, function() {
+
+            $(image).prop('src', '/assets/img/house/' + random + '.JPG');
+
+            myLoop();
+
+          }).fadeTo(1000, 1);
+
+       }, 3000);
+    }
+
+    setTimeout(function() {
+      myLoop();
+    }, 3000);
+
+    function randomIntBetween(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
     function slideLayerSelectUp() {
       $('.select-options').slideUp();

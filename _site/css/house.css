@@ -1,5 +1,5 @@
 .house-section {
-  padding: 40px 20px;
+  padding: 20px;
   min-height: 400px; }
 
 .house-models {
@@ -69,6 +69,9 @@
 .house-info {
   background: #666666;
   color: white; }
+  .house-info img {
+    max-height: 300px;
+    image-orientation: from-image; }
 
 .house-more-info {
   background: #EEE; }
