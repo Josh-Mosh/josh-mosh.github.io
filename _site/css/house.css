@@ -75,3 +75,7 @@
 
 .house-more-info {
   background: #EEE; }
+  .house-more-info .row div {
+    margin-top: 30px; }
+  .house-more-info img {
+    width: 100%; }
