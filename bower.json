@@ -1,0 +1,19 @@
+{
+  "name": "josh-mosh.github.io",
+  "homepage": "https://github.com/Josh-Mosh/josh-mosh.github.io",
+  "authors": [
+    "Josh Gillespie <josh@bethel.io>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

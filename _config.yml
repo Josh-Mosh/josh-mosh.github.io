@@ -16,6 +16,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://joshmosh.com" # the base hostname & protocol for your site
 twitter_username: josh_mosh
 github_username:  josh-mosh
+exclude:
+  - "bower_components"
+  - "bower.json"
 
 # Build settings
 markdown: kramdown

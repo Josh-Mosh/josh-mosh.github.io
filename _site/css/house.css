@@ -15,7 +15,7 @@
     z-index: 1; }
   .house-models .layer-select {
     padding: 10px;
-    right: 39px;
+    right: 59px;
     top: 10px;
     width: 150px;
     border-radius: 0;
@@ -26,12 +26,12 @@
   .house-models .hidden-select {
     background: transparent;
     cursor: pointer;
-    right: -10px;
+    right: 10px;
     width: 200px;
     z-index: 2; }
   .house-models .select-options {
     cursor: pointer;
-    right: -10px;
+    right: 10px;
     top: 60px;
     width: 200px;
     text-align: left;
@@ -48,7 +48,7 @@
   .house-models .down-arrow-wrapper {
     height: 50px;
     width: 50px;
-    right: -10px;
+    right: 10px;
     top: 10px; }
     .house-models .down-arrow-wrapper .down-arrow {
       background-image: url(https://3dwarehouse.sketchup.com/img/embed-sprites.png);
@@ -64,6 +64,7 @@
   .house-models .three-d-model, .house-models .select-wrapper {
     margin: 0 auto;
     max-width: 900px;
+    padding-right: 20px;
     position: relative; }
 
 .house-info {

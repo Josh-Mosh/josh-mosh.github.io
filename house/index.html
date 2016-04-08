@@ -7,7 +7,7 @@ layout: fluid-container
   <div class="house-models house-section">
     <div class="textCenter">
       <h1>We're buying a house!</h1>
-      <p>So the logical next step was create an accurate 3D model.</p>
+      <p>It looks like this.</p>
     </div>
 
     <div class="sketchup-models">
@@ -117,42 +117,42 @@ layout: fluid-container
       $('.layer-select').trigger('change');
     });
 
-    var images = $('.house-info img');
+    // var images = $('.house-info img');
 
-    function myLoop () {
-       setTimeout(function () {
-
-          var random = randomIntBetween(0, 17),
-              image = $(images[randomIntBetween(0, 1)]),
-              source = $(image).prop('src'),
-              current = parseInt(source.charAt(source.length - 5));
-
-          if (random === current) {
-            if (current === 0) {
-              random = 1;
-            } else {
-              random = random - 1;
-            }
-          }
-
-          $(image).fadeTo(1000, 0, function() {
-
-            $(image).prop('src', '/assets/img/house/' + random + '.JPG');
-
-            myLoop();
-
-          }).fadeTo(1000, 1);
-
-       }, 3000);
-    }
-
-    setTimeout(function() {
-      myLoop();
-    }, 3000);
-
-    function randomIntBetween(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+    // function myLoop () {
+    //    setTimeout(function () {
+    //
+    //       var random = randomIntBetween(0, 17),
+    //           image = $(images[randomIntBetween(0, 1)]),
+    //           source = $(image).prop('src'),
+    //           current = parseInt(source.charAt(source.length - 5));
+    //
+    //       if (random === current) {
+    //         if (current === 0) {
+    //           random = 1;
+    //         } else {
+    //           random = random - 1;
+    //         }
+    //       }
+    //
+    //       $(image).fadeTo(1000, 0, function() {
+    //
+    //         $(image).prop('src', '/assets/img/house/' + random + '.JPG');
+    //
+    //         myLoop();
+    //
+    //       }).fadeTo(1000, 1);
+    //
+    //    }, 3000);
+    // }
+    //
+    // setTimeout(function() {
+    //   myLoop();
+    // }, 3000);
+    //
+    // function randomIntBetween(min, max) {
+    //   return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
 
     function slideLayerSelectUp() {
       $('.select-options').slideUp();

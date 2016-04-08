@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Josh Mosh</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="/css/jquery-ui-1.10.4.custom.min.css">
+  <link rel="stylesheet" href="/css/reuse.css">
+  <link rel="stylesheet" href="/css/resume.css">
+  <link rel="stylesheet" href="/css/house.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="canonical" href="http://joshmosh.com/threeD/">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/vendor/three.js/build/three.min.js"></script>
+  <script type="text/javascript" src="/vendor/ColladaLoader.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/threeDee.js"></script>
+  <script type="text/javascript" src="/js/joshmosh.js"></script>
+</head>
+
+
+  <div class='container-fluid'>
+
+  <div class="content">
+    <div id="house-here" class="">
+  something
+</div>
+
+<script type="text/javascript">
+  var camera, scene, renderer;
+  var geometry, material, mesh;
+
+  init();
+  // animate();
+
+  function init() {
+      // camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
+      // camera.position.z = 1000;
+      //
+      scene = new THREE.Scene();
+      //
+      // geometry = new THREE.BoxGeometry(200, 200, 200);
+      // material = new THREE.MeshBasicMaterial({
+      //     color: 0xff0000,
+      //     wireframe: true
+      // });
+      //
+      // mesh = new THREE.Mesh(geometry, material);
+      // scene.add(mesh);
+      //
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize('500', '300');
+      //
+
+      var loader = new THREE.ColladaLoader();
+      loader.load('../assets/files/housefinalfurnished.dae', function (result) {
+        console.log('result ', result);
+        scene.add(result.scene);
+      });
+
+      document.getElementById('house-here').appendChild(renderer.domElement);
+      // document.body.appendChild(renderer.domElement);
+  }
+
+  function animate() {
+
+      requestAnimationFrame(animate);
+
+      mesh.rotation.x += 0.01;
+      mesh.rotation.y += 0.02;
+
+      renderer.render(scene, camera);
+
+  }
+
+</script>
+
+  </div>
+
+  <div class="header_bg"></div>
+<div class="row">
+  <div class="col-xs-12 header">
+    <div class="left">
+      <ul class="header_left">
+        <a href="/" id="home"><li><h4 class="active">Home</h4></li></a>
+        <a href="/portfolio" id="portfolio"><li><h4 class="inactive">Projects</h4></li></a>
+        <a href="/resume" id="resume"><li><h4 class="inactive">Resum&#233</h4></li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  
+<footer class='footer'>
+
+  <div id ="social">
+    <a href="https://github.com/Josh-Mosh" target="_blank" id="github">
+      <i class="fa fa-3x fa-github"></i>
+    </a>
+    <a href="https://twitter.com/Josh_Mosh" target="_blank" id="twitter">
+      <i class="fa fa-3x fa-twitter"></i>
+    </a>
+    <a href="http://www.linkedin.com/in/joshmosh" target="_blank">
+      <i class="fa fa-3x fa-linkedin"></i>
+    </a>
+    <a href="https://www.facebook.com/Joshua.Neal.Gillespie" target="_blank">
+      <i class="fa fa-3x fa-facebook"></i>
+    </a>
+    <a href="http://instagram.com/joshmosh" target="_blank">
+      <i class="fa fa-3x fa-instagram"></i>
+    </a>
+  </div>
+
+  <p class="marTop-2 marBot-0">Made with <i class="fa fa-heart" style="color:#F27490"></i> in Austin, TX</p>
+  <p><a href="https://github.com/Josh-Mosh/josh-mosh.github.io" target='_blank'>View Page Source on Github</a></p>
+</footer>
+
+
+</div>
+
+</html>
