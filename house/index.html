@@ -96,6 +96,9 @@ layout: fluid-container
 
   $(document).ready(function() {
 
+    $('.header h4.active').removeClass('active').addClass('inactive');
+    $('.header #other h4').removeClass('inactive').addClass('active');
+
     var selectOptionsHidden = true;
 
     $('.hidden-select').click(function() {

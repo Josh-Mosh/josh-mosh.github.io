@@ -14,7 +14,7 @@ html, body, .home {
 
 .content {
 	padding-bottom: 175px;
-	padding-top: 75px;
+	padding-top: 65px;
 	background: url('../assets/img/water2blueblurry.png') center center no-repeat;
 /*	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -26,33 +26,27 @@ html, body, .home {
 }
 
 @font-face {
-  font-family: 'Champagne';
-  src: url('../assets/fonts/Champagne.ttf');
-}
-
-@font-face {
   font-family: 'Walkway';
   src: url('../assets/fonts/WalkwayCondensed.ttf');
+}
+
+.header_bg {
+	top: 0;
+	height: 65px;
+	position: fixed;
+	background-color: #5196C2;
+	width: 110%;
+	border-bottom: 4px solid #222222;
+	z-index: 2;
 }
 
 .header {
 	top: 0;
 	position: fixed;
-	padding-top: 20px;
+	padding-top: 10px;
 	font-family: sans-serif;
 	margin-bottom: 10px;
 	z-index: 2;
-}
-
-	.header_bg {
-		top: 0;
-		height: 75px;
-		position: fixed;
-		background-color: #5196C2;
-		width: 110%;
-		border-bottom: 4px solid #222222;
-		z-index: 2;
-	}
 
 	.header ul li {
 		display: inline-block;
@@ -60,39 +54,36 @@ html, body, .home {
 
 	.header_left {
 		text-align: left;
-		padding-left: 20px;
-	}
 
-		.header_left .active {
+		a {
+			display: inline-block;
+			text-decoration: none;
+			margin: 0 12px;
+		}
+
+		.active {
 			color: black;
 			padding-bottom: 5px;
 			border-bottom: 2px solid black;
+
+			h4 {
+				color: black;
+			}
 		}
 
-		.active h4 {
-			color: black;
-		}
-
-		.header_left .inactive {
+		.inactive {
 			padding-bottom: 5px;
 			color: #555555;
-		}
 
-			.inactive:hover {
+			&:hover {
 				color: #333333;
 				border-bottom: 2px solid #777777;
 			}
-
-		.header_left li {
-			margin: 0px 20px;
 		}
-
-		.header_left a {
-			text-decoration: none;
-		}
+	}
+}
 
 .home {
-	font-family: 'Champagne';
 	padding: 15% 0;
 	text-align: center;
 

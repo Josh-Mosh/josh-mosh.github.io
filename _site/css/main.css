@@ -9,7 +9,7 @@ html, body, .home {
 
 .content {
   padding-bottom: 175px;
-  padding-top: 75px;
+  padding-top: 65px;
   background: url("../assets/img/water2blueblurry.png") center center no-repeat;
   /*	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -20,59 +20,46 @@ html, body, .home {
   width: 100%; }
 
 @font-face {
-  font-family: 'Champagne';
-  src: url("../assets/fonts/Champagne.ttf"); }
-@font-face {
   font-family: 'Walkway';
   src: url("../assets/fonts/WalkwayCondensed.ttf"); }
-.header {
-  top: 0;
-  position: fixed;
-  padding-top: 20px;
-  font-family: sans-serif;
-  margin-bottom: 10px;
-  z-index: 2; }
-
 .header_bg {
   top: 0;
-  height: 75px;
+  height: 65px;
   position: fixed;
   background-color: #5196C2;
   width: 110%;
   border-bottom: 4px solid #222222;
   z-index: 2; }
 
-.header ul li {
-  display: inline-block; }
-
-.header_left {
-  text-align: left;
-  padding-left: 20px; }
-
-.header_left .active {
-  color: black;
-  padding-bottom: 5px;
-  border-bottom: 2px solid black; }
-
-.active h4 {
-  color: black; }
-
-.header_left .inactive {
-  padding-bottom: 5px;
-  color: #555555; }
-
-.inactive:hover {
-  color: #333333;
-  border-bottom: 2px solid #777777; }
-
-.header_left li {
-  margin: 0px 20px; }
-
-.header_left a {
-  text-decoration: none; }
+.header {
+  top: 0;
+  position: fixed;
+  padding-top: 10px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  z-index: 2; }
+  .header .header ul li {
+    display: inline-block; }
+  .header .header_left {
+    text-align: left; }
+    .header .header_left a {
+      display: inline-block;
+      text-decoration: none;
+      margin: 0 12px; }
+    .header .header_left .active {
+      color: black;
+      padding-bottom: 5px;
+      border-bottom: 2px solid black; }
+      .header .header_left .active h4 {
+        color: black; }
+    .header .header_left .inactive {
+      padding-bottom: 5px;
+      color: #555555; }
+      .header .header_left .inactive:hover {
+        color: #333333;
+        border-bottom: 2px solid #777777; }
 
 .home {
-  font-family: 'Champagne';
   padding: 15% 0;
   text-align: center; }
   .home .home-content {
