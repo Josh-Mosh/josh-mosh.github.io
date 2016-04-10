@@ -22,7 +22,10 @@
     border: 0;
     font-size: 21px;
     appearance: none;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: ''; }
   .house-models .hidden-select {
     background: transparent;
     cursor: pointer;

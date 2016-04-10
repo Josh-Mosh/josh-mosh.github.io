@@ -32,6 +32,9 @@
     font-size: 21px;
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
   }
 
   .hidden-select {
