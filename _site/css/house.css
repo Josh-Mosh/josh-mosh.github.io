@@ -1,7 +1,7 @@
 .house-section {
   padding: 20px;
   min-height: 400px;
-  background: #EEE; }
+  background: white; }
 
 .house-models {
   background: white; }
@@ -90,7 +90,7 @@
     image-orientation: from-image; }
 
 .house-more-info {
-  background: white; }
+  background: #eee; }
   .house-more-info .row div {
     margin-top: 30px; }
   .house-more-info img {
