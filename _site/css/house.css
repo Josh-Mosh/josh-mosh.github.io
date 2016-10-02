@@ -1,74 +1,86 @@
 .house-section {
   padding: 20px;
-  min-height: 400px; }
+  min-height: 400px;
+  background: #EEE; }
 
 .house-models {
   background: white; }
   .house-models .sketchup-models {
     text-align: center; }
-  .house-models .sketchup-background, .house-models .select-options, .house-models .down-arrow-wrapper {
-    background: #FDFCFC;
+  .house-models .sketchup-background, .house-models .select-options {
+    background: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
     font-weight: 200;
     height: 50px;
     opacity: .9;
     position: absolute;
     z-index: 1; }
   .house-models .layer-select {
-    padding: 10px;
-    right: 59px;
-    top: 10px;
-    width: 150px;
-    border-radius: 0;
-    border: 0;
-    font-size: 21px;
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    border: 0;
+    border-radius: 3px;
+    font-size: 18px;
+    height: 42px;
+    left: 20px;
+    padding: 10px;
+    top: 20px;
     text-indent: 0.01px;
-    text-overflow: ''; }
+    text-overflow: '';
+    width: 150px;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
   .house-models .hidden-select {
     background: transparent;
     cursor: pointer;
-    right: 10px;
-    width: 200px;
-    z-index: 2; }
+    left: 20px;
+    width: 150px;
+    z-index: 4; }
   .house-models .select-options {
     cursor: pointer;
-    right: 10px;
-    top: 60px;
-    width: 200px;
+    font-size: 18px;
+    height: 120px;
+    left: 20px;
+    top: 61px;
     text-align: left;
-    font-size: 18px; }
+    width: 150px; }
     .house-models .select-options a {
-      background: #FDFCFC;
+      background: white;
+      border-top: 1px solid lightgray;
       color: #000;
       cursor: pointer;
+      display: block;
       height: 40px;
       opacity: .9;
-      display: block;
-      border-top: 1px solid lightgray;
-      padding: 7px 10px; }
-  .house-models .down-arrow-wrapper {
-    height: 50px;
-    width: 50px;
-    right: 10px;
-    top: 10px; }
-    .house-models .down-arrow-wrapper .down-arrow {
-      background-image: url(https://3dwarehouse.sketchup.com/img/embed-sprites.png);
-      background-size: 64px 194px;
-      background-position: 0px -160px;
-      position: absolute;
-      margin: 9px 9px 0px;
-      width: 32px;
-      height: 32px;
-      cursor: pointer; }
-    .house-models .down-arrow-wrapper #viewer-scenes-panel, .house-models .down-arrow-wrapper .viewer-scenes-panel.enabled {
-      top: 50px !important; }
-  .house-models .three-d-model, .house-models .select-wrapper {
+      padding: 8px 10px 8px 35px; }
+      .house-models .select-options a:last-child {
+        border-radius: 0 0 3px 3px; }
+  .house-models .three-d-model {
     margin: 0 auto;
-    max-width: 900px;
-    padding-right: 20px;
+    max-width: 1200px;
+    padding-left: 20px;
     position: relative; }
+  .house-models .select-wrapper {
+    position: relative; }
+  .house-models .down-arrow {
+    color: #656565;
+    position: absolute;
+    text-align: left;
+    left: 32px;
+    top: 36px;
+    z-index: 3; }
+
+.modelo-wrapper {
+  padding: 0; }
+  .modelo-wrapper iframe {
+    width: 100%; }
+
+.hidden-floor {
+  overflow: hidden;
+  position: relative;
+  height: 0; }
+  .hidden-floor iframe {
+    position: absolute; }
 
 .house-info {
   background: #666666;
@@ -78,7 +90,7 @@
     image-orientation: from-image; }
 
 .house-more-info {
-  background: #EEE; }
+  background: white; }
   .house-more-info .row div {
     margin-top: 30px; }
   .house-more-info img {
