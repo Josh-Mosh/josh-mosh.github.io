@@ -77,7 +77,7 @@
 
 .hidden-floor {
   overflow: hidden;
-  position: relative;
+  position: absolute;
   height: 0; }
   .hidden-floor iframe {
     position: absolute; }
